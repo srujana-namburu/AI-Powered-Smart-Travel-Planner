@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #d10263;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.navbar nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar nav a:hover {
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.tips {
+    margin-bottom: 20px;
+}
+
+.tips h2 {
+    font-size: 20px;
+}
+
+.tip-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.live-updates h2,
+.map h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.live-updates p {
+    font-size: 16px;
+}
+
+.live-updates .time {
+    color: red;
+    font-weight: bold;
+}
+
+.map img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 10px;
+}
