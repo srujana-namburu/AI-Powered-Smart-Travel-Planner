@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+button {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+}
+
+.profile-section {
+    display: flex;
+    padding: 20px;
+    background-image: url('banner.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.trip-section {
+    padding: 20px;
+}
+
+.trip-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.trip-images img {
+    width: 48%;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+
+.votes {
+    margin-top: 10px;
+}
+
+.votes span {
+    margin-right: 10px;
+}
