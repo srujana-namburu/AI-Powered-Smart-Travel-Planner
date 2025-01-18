@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTripPlanner</title>
+    <link rel="stylesheet" href="{% static 'css/history.css' %}">
+</head>
+<div class="container">
+    <header>
+        <h1>My Trips</h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'home' %}">Categories</a>
+            <a href="{% url 'home' %}">About us</a>
+            <a href="{% url 'home' %}">Profile</a>
+        </nav>
+    </header>
+
+    <div class="profile-section">
+        <div class="profile-pic">
+            <img src="{{ user.profile_picture.url }}" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>My Profile</h2>
+            <ul>
+                <li><strong>{{ user.ratings }}</strong> Ratings</li>
+                <li><strong>{{ user.following }}</strong> Following</li>
+                <li><strong>{{ user.trips_created }}</strong> Trips Created</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="trip-section">
+        <h2>My Trips</h2>
+        {% for trip in trips %}
+        <div class="trip-card">
+            <h3>{{ trip.name }}</h3>
+            <p>{{ trip.review }}</p>
+            <p>{{ trip.description }}</p>
+            <div class="trip-images">
+                <img src="{{ trip.image1.url }}" alt="Trip Image 1">
+                <img src="{{ trip.image2.url }}" alt="Trip Image 2">
+            </div>
+            <div class="votes">
+                <span>{{ trip.upvotes }} Upvotes</span>
+                <span>{{ trip.downvotes }} Downvotes</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+

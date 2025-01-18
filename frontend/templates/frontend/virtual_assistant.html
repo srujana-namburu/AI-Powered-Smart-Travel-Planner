@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Assistant</title>
+    <link rel="stylesheet" href="{% static 'css/va.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">Travel Assistant</div>
+        <a href="{% url 'touristguide' %}" class="button">TouristGuide</a>
+    </header>
+
+    <div class="main-container">
+        <div class="left-section">
+            <h2>Virtual Travel Assistant</h2>
+            <p>Interact with our smart travel assistant for your queries.</p>
+            <form action="https://www.chatbase.co/chatbot-iframe/RRkRwXSlfPfmnAdnz5Z_A" method="get" target="_blank">
+                <input type="text" placeholder="Type your query here...">
+                <button type="submit">Ask</button>
+            </form>
+        </div>
+        <div class="right-section">
+            <h2>Plan Your Trip</h2>
+            <form>
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" placeholder="Enter destination">
+
+                <label for="budget">Budget (₹):</label>
+                <input type="number" id="budget" placeholder="Enter your budget">
+
+                <button type="submit">Plan Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

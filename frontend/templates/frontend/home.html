@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTripPlanner</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SmartTripPlanner</div>
+        <nav>
+            <a href="{% url 'login' %}" class="btn">Login</a>
+            <a href="#" class="btn">Get Started</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Explore Your Next Adventure</h1>
+            <p>Discover the world with SmartTripPlanner, your ultimate travel companion!</p>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="{% static 'images/virtual-assistant.png' %}" alt="AI-powered Virtual Travel Assistant">
+                <a href="{% url 'virtual_assistant' %}" class="btn"><h3>AI-powered Virtual Travel Assistant</h3></a>
+                <p>Your personal guide to seamless travel planning.</p>
+            </div>
+            <div class="feature">
+                <img src="{% static 'images/dynamic-pricing.png' %}" alt="Dynamic Pricing Optimization">
+                <a href="{% url 'dynamic_pricing' %}" class="btn"><h3>Dynamic Pricing Optimization</h3></a>
+                <p>Get the best prices with our smart algorithms.</p>
+            </div>
+            <div class="feature">
+                <img src="{% static 'images/travel-safety.png' %}" alt="Real-time Travel Safety Advisory">
+                <a href="{% url 'travel_safety' %}" class="btn"><h3>Real-time Travel Safety Advisory</h3></a>
+                <p>Stay informed with live safety updates.</p>
+            </div>
+            <div class="feature">
+                <img src="{% static 'images/emergency-locator.png' %}" alt="Emergency Hospital Locator">
+                <a href="{% url 'travel_safety' %}" class="btn"><h3>Emergency Hospital Locator</h3></a>
+                <p>Find the nearest medical help when you need it.</p>
+            </div>
+        </section>
+        <div class="cta">
+            <a href="{% url 'history' %}" class="btn">History</a>
+        </div>
+    </main>
+</body>
+</html>

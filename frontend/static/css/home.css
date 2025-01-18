@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+.header .btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #ff4081;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.header .btn:hover {
+    background-color: #e91e63;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fafafa;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 20px;
+}
+
+.feature {
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 22%;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+.cta {
+    text-align: center;
+    margin: 20px;
+}
+
+.cta .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

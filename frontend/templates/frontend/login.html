@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartTripPlanner - Login</title>
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+  <div class="login-container">
+    <h1><span>•</span> SmartTripPlanner</h1>
+    <form method="post" action="{% url 'home' %}">
+      {% csrf_token %}
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <input type="password" name="password" placeholder="Enter your password" required>
+      <button class="btn btn-success" type="submit">Sign in</button>
+      <!--<button type="submit"><a href="{% url 'home' %}">Sign in</a></button>-->
+    </form>
+    <p>Not a User? <a href="{% url 'signup' %}">Sign Up</a></p>
+    {% if messages %}
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</body>
+</html>

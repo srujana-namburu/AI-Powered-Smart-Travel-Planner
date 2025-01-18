@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartTripPlanner</title>
+  <link rel="stylesheet" href="{% static 'css/tg.css' %}">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="{% static 'images/logo.png' %}" alt="Logo">
+      <h1>SmartTripPlanner</h1>
+    </div>
+    <input type="text" placeholder="Search destinations..." class="search-bar">
+    <button type="submit" class="btn"><a href="{% url 'home' %}">Home</a></button>
+  </header>
+
+  <main>
+    <section class="search-results">
+      <h2>Search Results</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="{% static 'images/cathedral.png' %}" alt="Historic Cathedral">
+          <h3>Historic Cathedral</h3>
+          <p>A landmark with stunning architecture.</p>
+        </div>
+        <div class="card">
+          <img src="{% static 'images/beach.jpg' %}" alt="Golden Beach">
+          <h3>Golden Beach</h3>
+          <p>Perfect spot for sunbathing and swimming.</p>
+        </div>
+        <div class="card">
+          <img src="{% static 'images/city_square.jpeg' %}" alt="City Square">
+          <h3>City Square</h3>
+          <p>Experience vibrant city life.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sentiment-analysis">
+      <h2>Tourism Sentiment Analysis</h2>
+      <div class="analysis-container">
+        <div class="reviews">
+          <h3>Visitor Reviews</h3>
+          <p>"The historic cathedral was breathtaking, a must-visit!" - Emily Walker</p>
+          <p>"Golden Beach is the perfect place to unwind." - John Smith</p>
+          <p>"City Square offers a unique blend of history and modernity." - Linda Brown</p>
+        </div>
+        <div class="overall-sentiment">
+          <h3>Overall Sentiment</h3>
+          <img src="{% static 'images/pie_chart.jpg' %}" alt="Pie Chart">
+        </div>
+      </div>
+    </section>
+
+    <section class="interactive-map">
+      <h2>Interactive Map</h2>
+      <img src="{% static 'images/map.png' %}" alt="Map" class="map">
+    </section>
+  </main>
+</body>
+</html>

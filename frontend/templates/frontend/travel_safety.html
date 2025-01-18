@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTripPlanner</title>
+    <link rel="stylesheet" href="{% static 'css/travsafe.css' %}">
+</head>
+<body>
+    <header class="navbar">
+        <h1>SmartTripPlanner</h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'dynamic_pricing' %}">Destinations</a>
+            <a href="{% url 'safety_tips' %}">Safety Tips</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tips">
+            <h2>Real-Time Safety Tips</h2>
+            <div class="tip-card">
+                <h3>Tip 1: Stay Informed</h3>
+                <p>Always stay updated with the latest safety alerts and news about your destination. Ensure you have reliable sources of information.</p>
+            </div>
+            <div class="tip-card">
+                <h3>Tip 2: Health Precautions</h3>
+                <p>Carry essential health supplies, including masks and sanitizers, especially when traveling to areas with health advisories.</p>
+            </div>
+            <div class="tip-card">
+                <h3>Tip 3: Emergency Contacts</h3>
+                <p>Have a list of emergency contacts, including local police and embassy numbers, readily available.</p>
+            </div>
+        </section>
+
+        <section class="live-updates">
+            <h2>Live Updates</h2>
+            <p><span class="time">[12:30 PM]</span> New travel advisory issued for the downtown area due to unexpected protests. Please avoid the area until further notice.</p>
+            <p><span class="time">[11:45 AM]</span> Weather update: Severe thunderstorms expected later today. Travelers are advised to stay indoors and avoid travel if possible.</p>
+        </section>
+
+        <section class="map">
+            <h2>Emergency Hospital Locator</h2>
+            <img src="{% static 'images/map1.png' %}" alt="Interactive Map">
+        </section>
+    </main>
+</body>
+</html>

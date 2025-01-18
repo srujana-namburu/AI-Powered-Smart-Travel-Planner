@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTripPlanner</title>
+    <link rel="stylesheet" href="{% static 'css/dp.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">SmartTripPlanner</div>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'home' %}">Destinations</a>
+            <a href="{% url 'home' %}">Pricing</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pricing-optimization">
+            <h1>Dynamic Pricing Optimization for Hotels</h1>
+            <div class="budget-options">
+                <div class="budget-card">
+                    <img src="{% static 'images/highb.jpg' %}" alt="Medium Budget Hotel">
+                    <h2>Budget: High</h2>
+                    <p>Experience luxury at its finest with our premium hotel selections.</p>
+                    <a href="#" class="button">Explore</a>
+                </div>
+                <div class="budget-card">
+                    <img src="{% static 'images/mediumb.jpg' %}" alt="Medium Budget Hotel">
+                    <h2>Budget: Medium</h2>
+                    <p>Enjoy comfort and style with our mid-range hotel options.</p>
+                    <a href="#" class="button">Explore</a>
+                </div>
+                <div class="budget-card">
+                    <img src="{% static 'images/lowb.jpg' %}" alt="Medium Budget Hotel">
+                    <h2>Budget: Low</h2>
+                    <p>Find great deals with our budget-friendly hotel selections.</p>
+                    <a href="#" class="button">Explore</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="hotel-reviews">
+            <h1>Hotel Reviews</h1>
+            <div class="review">
+                <p><strong>User1</strong><br>"Amazing service and beautiful rooms. Highly recommend!"</p>
+            </div>
+            <div class="review">
+                <p><strong>User2</strong><br>"A great stay with excellent facilities. Will visit again!"</p>
+            </div>
+        </section>
+
+        <section class="room-selection">
+            <h1>Room Selection</h1>
+            <form>
+                <label><input type="radio" name="room" value="single"> Single Bed</label>
+                <label><input type="radio" name="room" value="dual"> Dual Bed</label>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

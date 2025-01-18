@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+
+/* Styling for the Budget Cards */
+.budget-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px; /* Adjust as needed */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling for budget cards */
+.budget-card img {
+    width: 100%;
+    height: 200px; /* Adjust to your preferred height */
+    object-fit: cover;
+    display: block;
+}
+
+/* Card content */
+.budget-card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.budget-card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.budget-card-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Explore button */
+.budget-card .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d81b60;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.budget-card-content .explore-btn:hover {
+    background-color: #d81b60;
+}
+
+
+.hotel-reviews .review {
+    margin: 20px 0;
+}
+
