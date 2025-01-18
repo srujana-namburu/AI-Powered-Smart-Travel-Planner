@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-=rlz=kr+3j!3dlya+pyqf#uo$ub7mex7e-w5g#!j_h)-!__!tl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ai-powered-smart-travel-planner-3.onrender.com',
+    '127.0.0.1',]
 
 
 # Application definition
